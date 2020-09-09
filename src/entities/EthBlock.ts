@@ -1,3 +1,5 @@
 export default interface EthBlock {
-    blockNumber: Number;
+    blockNumber: Number
+    hash: string
+    timestamp: number
 }
