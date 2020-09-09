@@ -31,11 +31,11 @@ async function startParsing() {
                 }
             })
 
-            blocksRepository.persistBlock(ethBlocks)
+            blocksRepository.persistBlocks(ethBlocks)
         })
     })
 
-    setTimeout(startParsing, 5000);
+    setTimeout(startParsing, 1000);
 };
 
 startParsing()

@@ -17,7 +17,7 @@ export default class BlocksRepository {
         return lastScannedBlockNumber.blockNumber
     }
 
-    async persistBlock(blocks: []) {
+    async persistBlocks(blocks: Array<EthBlock>) {
         await knex(this.BLOCKS_TABLE).insert(blocks)
     }
 }
