@@ -14,7 +14,7 @@ async function startParsing () {
 
     const blocksPromises = [] as any
     const start = lastScannedBlockNumber + 1
-    const end = start + 99
+    const end = start + 49
     for (let i = start; i <= end; i++) {
       blocksPromises.push(web3.eth.getBlock(i + '', true))
     }
@@ -48,7 +48,7 @@ async function startParsing () {
     )
 
     // delay is good,
-    // without sqllite could generate "TOO MANY CONNECTIONS"
+    // without sqllite could generate "TOO MANY CONNECTIONS" or "SQLITE_ERROR: too many SQL variables"
     // Infura could return "project ID request rate exceeded"
     setTimeout(startParsing, 3000)
   })
