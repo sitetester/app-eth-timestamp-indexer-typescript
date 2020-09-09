@@ -6,5 +6,5 @@
 
 
 -  `npx knex migrate:latest`
--  `nodemon src/index.tss`
+-  `nodemon src/index.ts`
  
