@@ -1,4 +1,4 @@
-import dbConfig from '../knexfile'
-import knex from 'knex'
+import * as dbConfig from '../knexfile';
+import knex from 'knex';
 
-export default knex(dbConfig)
+export default knex(dbConfig);
