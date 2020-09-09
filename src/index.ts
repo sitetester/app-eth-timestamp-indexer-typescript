@@ -47,6 +47,9 @@ async function startParsing () {
       }
     )
 
+    // delay is good,
+    // without sqllite could generate "TOO MANY CONNECTIONS"
+    // Infura could return "project ID request rate exceeded"
     setTimeout(startParsing, 3000)
   })
 }
